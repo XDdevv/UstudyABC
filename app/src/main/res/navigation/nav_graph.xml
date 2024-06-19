@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bookFragment">
+
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.uz.ustudy.ui.books.BookFragment"
+        android:label="fragment_book"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.uz.ustudy.ui.analytics.AnalyticsFragment"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" />
+</navigation>

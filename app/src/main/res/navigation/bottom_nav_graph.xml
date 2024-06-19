@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/homeFragment">
+    <!--   O'zgartirish Kiritilmasin !!!     -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.uz.ustudy.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.uz.ustudy.ui.analytics.AnalyticsFragment"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" />
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.uz.ustudy.ui.books.BookFragment"
+        android:label="fragment_book"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.uz.ustudy.ui.courses.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.uz.ustudy.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

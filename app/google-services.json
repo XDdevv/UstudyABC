@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "216354960165",
+    "project_id": "ustudy-21910",
+    "storage_bucket": "ustudy-21910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216354960165:android:f08a466f988a8b01d560cc",
+        "android_client_info": {
+          "package_name": "com.uz.ustudy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVKaQ1VaoPE9-ULAl-8sBwHxXGjiXCeCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
