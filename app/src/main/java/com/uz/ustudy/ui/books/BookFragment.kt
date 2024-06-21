@@ -1,10 +1,8 @@
 package com.uz.ustudy.ui.books
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.uz.ustudy.R
 import com.uz.ustudy.databinding.FragmentBookBinding
 
