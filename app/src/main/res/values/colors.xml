@@ -7,4 +7,6 @@
     <color name="brown_rosy">#DCBEB6</color>
     <color name="beige">#FAF0E6</color>
     <color name="dark">#4B4544</color>
+    <color name="light_pink">#F4B5A4</color>
+    <color name="app_background">#292525</color>
 </resources>
