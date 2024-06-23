@@ -15,4 +15,5 @@ interface CategoryDao {
     suspend fun getAllCategories():Flow<CategoryEntity>
     @Query("DELETE FROM categoryentity") // malumot ni tozalaydi
     suspend fun clear()
+
 }
