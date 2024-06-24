@@ -6,6 +6,7 @@
     <string name="courses">Courses</string>
     <string name="analytics">Analytics</string>
     <string name="profile">Profile</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur. Odio neque commodo id aenean quis magna. Auctor neque id pharetra gravida. Libero scelerisque ut mauris volutpat risus nec facilisi adipiscing. Augue mollis amet.</string>
 
     <style name="customTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">14sp</item>
