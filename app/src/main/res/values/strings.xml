@@ -6,4 +6,10 @@
     <string name="courses">Courses</string>
     <string name="analytics">Analytics</string>
     <string name="profile">Profile</string>
+
+    <style name="customTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
 </resources>

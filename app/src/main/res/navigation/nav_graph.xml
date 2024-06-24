@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/bookFragment">
+    app:startDestination="@id/coursesFragment">
 
     <fragment
         android:id="@+id/bookFragment"
@@ -15,4 +15,9 @@
         android:name="com.uz.ustudy.ui.analytics.AnalyticsFragment"
         android:label="fragment_analytics"
         tools:layout="@layout/fragment_analytics" />
+    <fragment
+        android:id="@+id/coursesFragment"
+        tools:layout="@layout/fragment_courses"
+        android:name="com.uz.ustudy.ui.courses.CoursesFragment"
+        android:label="CoursesFragment" />
 </navigation>
