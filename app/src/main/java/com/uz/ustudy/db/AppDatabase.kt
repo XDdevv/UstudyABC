@@ -16,25 +16,4 @@ import com.uz.ustudy.db.test.Test
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun testDao(): TestDao
-
-    companion object {
-        @Volatile
-        private var INSTANCE: AppDatabase? = null
-
-        fun getDatabase(): AppDatabase {
-            val tempInstance = INSTANCE
-            if (tempInstance != null) {
-                return tempInstance
-            }
-            synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    UstudyApp.application,
-                    AppDatabase::class.java,
-                    "ustudy_db"
-                ).build()
-                INSTANCE = instance
-                return instance
-            }
-        }
-    }
 }

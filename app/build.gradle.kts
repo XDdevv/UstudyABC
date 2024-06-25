@@ -75,4 +75,8 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.0")
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+
+    implementation("com.github.mukeshsolanki.android-otpview-pinview:otpview:3.1.0")
+    implementation("com.github.AAChartModel:AAChartCore-Kotlin:7.1.0")
+
 }

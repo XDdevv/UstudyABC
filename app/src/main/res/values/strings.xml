@@ -6,4 +6,10 @@
     <string name="courses">Courses</string>
     <string name="analytics">Analytics</string>
     <string name="profile">Profile</string>
+    <string name="by_continuing_you_agree_to_n_terms_of_use_and_privacy_policy">By continuing, you agree to\t <b><font color="#F4B5A4">Terms of Use</font></b> and <b><font color="#F4B5A4">Privacy Policy</font></b>.</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account ? <font color="#f4b5a4"><b>Sign up</b></font></string>
+    <string name="add_course_1">Add Course <font color="#F4B5A4">(1/4)</font></string>
+    <string name="add_course_2">Add Course <font color="#F4B5A4">(2/4)</font></string>
+    <string name="add_course_3">Add Course <font color="#F4B5A4">(3/4)</font></string>
+    <string name="add_course_4">Add Course <font color="#F4B5A4">(4/4)</font></string>
 </resources>

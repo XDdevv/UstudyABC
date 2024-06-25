@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="24dp"
+    android:scrollbars="none"
+    tools:context=".ui.profile.auth.register.RegisterStep1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Create Account 1/3"
+            android:textColor="@color/salmon"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/title_tv">
+
+            <TextView
+                android:id="@+id/name_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Full Name"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="name"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/brown_rosy"
+                android:textColorHint="@color/brown_rosy" />
+
+            <TextView
+                android:id="@+id/phone_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Mobile Number"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="+998"
+                android:autofillHints="name"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/brown_rosy"
+                android:textColorHint="@color/brown_rosy" />
+
+            <TextView
+                android:id="@+id/password_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Password"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="name"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/brown_rosy"
+                android:textColorHint="@color/brown_rosy" />
+
+            <TextView
+                android:id="@+id/cpassword_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Confirm Password"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/cpassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="name"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/brown_rosy"
+                android:textColorHint="@color/brown_rosy" />
+
+            <TextView
+                android:id="@+id/placeholder_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/by_continuing_you_agree_to_n_terms_of_use_and_privacy_policy"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_button_clicked"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingHorizontal="64sp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/terracotta"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

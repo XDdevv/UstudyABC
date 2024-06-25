@@ -3,16 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/bookFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
-        android:id="@+id/bookFragment"
-        android:name="com.uz.ustudy.ui.books.BookFragment"
-        android:label="fragment_book"
-        tools:layout="@layout/fragment_book" />
+        android:id="@+id/splashFragment"
+        android:name="com.uz.ustudy.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/analyticsFragment"
-        android:name="com.uz.ustudy.ui.analytics.AnalyticsFragment"
-        android:label="fragment_analytics"
-        tools:layout="@layout/fragment_analytics" />
+        android:id="@+id/onboardingFragment"
+        android:name="com.uz.ustudy.ui.onboarding.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.uz.ustudy.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/registerFragmentStep2"
+        android:name="com.uz.ustudy.ui.profile.auth.register.RegisterStep2Fragment"
+        android:label="fragment_register_step2"
+        tools:layout="@layout/fragment_register_step2" />
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.uz.ustudy.ui.profile.auth.otp.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" />
+    <fragment
+        android:id="@+id/registerFragmentStep1"
+        android:name="com.uz.ustudy.ui.profile.auth.register.RegisterStep1Fragment"
+        android:label="fragment_register_step1"
+        tools:layout="@layout/fragment_register_step1" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.uz.ustudy.ui.profile.auth.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.uz.ustudy.ui.profile.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.uz.ustudy.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/editPasswordFragment"
+        android:name="com.uz.ustudy.ui.profile.EditPasswordFragment"
+        android:label="fragment_edit_password"
+        tools:layout="@layout/fragment_edit_password" />
 </navigation>
