@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:padding="24dp"
-    tools:context=".ui.profile.user.insert.course.AddCourseThirdStepFragment">
+    tools:context=".ui.profile.user.insert.course.AddCourseSecondStepFragment">
 
     <ImageView
         android:id="@+id/ic_back"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="@string/add_course_4"
+        android:text="@string/add_book_2"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,29 +38,23 @@
         app:layout_constraintBottom_toTopOf="@id/next_btn"
         app:layout_constraintTop_toBottomOf="@id/addcourse_label_tv">
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/categories_label_tv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
             android:fontFamily="@font/poppins_medium"
-            android:padding="8dp"
-            android:text="Is Course Free ?"
-            android:textColor="#fff"
-            android:textSize="18sp"
-            app:thumbTint="@color/terracotta"
-            app:trackTint="@color/salmon" />
+            android:text="Book's Categories"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/price_et"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/bg_input"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Enter course's price here"
-            android:padding="12dp"
-            android:textColor="@color/salmon"
-            android:textColorHint="@color/salmon" />
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_add_course_category" />
 
     </LinearLayout>
 
@@ -71,7 +65,7 @@
         android:background="@drawable/bg_button_clicked"
         android:fontFamily="@font/poppins_bold"
         android:padding="8dp"
-        android:text="Send admin to publish"
+        android:text="Next"
         android:textColor="@color/terracotta"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent" />

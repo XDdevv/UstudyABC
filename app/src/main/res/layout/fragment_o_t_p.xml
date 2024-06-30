@@ -86,4 +86,29 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/confirm_btn" />
 
+    <TextView
+        android:id="@+id/errorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_medium"
+        android:visibility="gone"
+        android:text="Error message"
+        android:textColor="#D50000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/otp_label"
+        app:layout_constraintTop_toBottomOf="@id/otp_label" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorColor="@color/terracotta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/salmon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

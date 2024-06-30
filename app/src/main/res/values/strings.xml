@@ -12,4 +12,11 @@
     <string name="add_course_2">Add Course <font color="#F4B5A4">(2/4)</font></string>
     <string name="add_course_3">Add Course <font color="#F4B5A4">(3/4)</font></string>
     <string name="add_course_4">Add Course <font color="#F4B5A4">(4/4)</font></string>
+
+    <string name="add_book_1">Add Book <font color="#F4B5A4">(1/4)</font></string>
+    <string name="add_book_2">Add Book <font color="#F4B5A4">(2/4)</font></string>
+    <string name="add_book_3">Add Book <font color="#F4B5A4">(3/4)</font></string>
+    <string name="add_book_4">Add Book <font color="#F4B5A4">(4/4)</font></string>
+
+
 </resources>

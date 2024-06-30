@@ -62,4 +62,14 @@
         android:name="com.uz.ustudy.ui.profile.EditPasswordFragment"
         android:label="fragment_edit_password"
         tools:layout="@layout/fragment_edit_password" />
+    <fragment
+        android:id="@+id/userMainFragment"
+        android:name="com.uz.ustudy.ui.profile.user.UserMainFragment"
+        android:label="fragment_user_main"
+        tools:layout="@layout/fragment_user_main" />
+    <fragment
+        android:id="@+id/finishingFragment"
+        android:name="com.uz.ustudy.ui.profile.auth.otp.FinishingFragment"
+        android:label="fragment_finishing"
+        tools:layout="@layout/fragment_finishing" />
 </navigation>

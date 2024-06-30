@@ -60,22 +60,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="46dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Username or phone"
+        android:text="Phone number"
         android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/description_tv" />
 
     <EditText
-        android:id="@+id/email_et"
+        android:id="@+id/phone_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:autofillHints="name"
         android:background="@drawable/bg_input"
         android:fontFamily="@font/poppins_medium"
+        android:inputType="phone"
         android:labelFor="@id/email_label_tv"
-        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/brown_rosy"
         android:textColorHint="@color/brown_rosy"
@@ -91,28 +91,43 @@
         android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_et" />
+        app:layout_constraintTop_toBottomOf="@id/phone_et" />
 
     <EditText
         android:id="@+id/password_et"
         android:layout_width="match_parent"
-        android:labelFor="@id/password_label_tv"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:autofillHints="name"
         android:background="@drawable/bg_input"
         android:fontFamily="@font/poppins_medium"
         android:inputType="textPassword"
+        android:labelFor="@id/password_label_tv"
         android:padding="10dp"
         android:textColor="@color/brown_rosy"
         android:textColorHint="@color/brown_rosy"
         app:layout_constraintTop_toBottomOf="@id/password_label_tv" />
 
+    <TextView
+        android:id="@+id/errorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_medium"
+        android:visibility="gone"
+        android:text="Error message"
+        android:textColor="#D50000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/password_et"
+        app:layout_constraintTop_toBottomOf="@id/password_et" />
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/bg_button_clicked"
         android:fontFamily="@font/poppins_semi_bold"
         android:paddingHorizontal="64sp"
@@ -122,7 +137,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_et" />
+        app:layout_constraintTop_toBottomOf="@+id/errorTv" />
 
     <TextView
         android:id="@+id/signup_tv"
@@ -136,5 +151,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorColor="@color/terracotta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/salmon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

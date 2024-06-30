@@ -19,7 +19,7 @@ class RegisterStep1Fragment : Fragment(R.layout.fragment_register_step1) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentRegisterStep1Binding.bind(view)
 
-
+        
     }
 
     override fun onDestroyView() {

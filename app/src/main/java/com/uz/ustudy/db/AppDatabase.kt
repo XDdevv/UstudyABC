@@ -5,6 +5,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.uz.ustudy.app.UstudyApp
 import com.uz.ustudy.db.dao.TestDao
+import com.uz.ustudy.db.dao.UserDao
 import com.uz.ustudy.db.test.Test
 
 
@@ -16,4 +17,6 @@ import com.uz.ustudy.db.test.Test
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun testDao(): TestDao
+    abstract fun userDao(): UserDao
+
 }
