@@ -5,6 +5,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.google.firebase.crashlytics)
+
 }
 
 android {
